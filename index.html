@@ -18,8 +18,129 @@
 
 	<link rel="stylesheet" href="style.css">
 
+	<!-- Thompson Language Popup Styles -->
+	<style>
+		/* ── Overlay backdrop ── */
+		#thompson-overlay {
+			display: none;
+			position: fixed;
+			inset: 0;
+			background: rgba(0, 0, 0, 0.65);
+			z-index: 99999;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Segoe UI', Arial, sans-serif;
+		}
+		#thompson-overlay.active {
+			display: flex;
+		}
 
+		/* ── Popup card ── */
+		#thompson-popup {
+			background: linear-gradient(145deg, #1a3a1a, #2d5a2d);
+			border: 3px solid #7ec87e;
+			border-radius: 18px;
+			padding: 36px 44px 32px;
+			max-width: 420px;
+			width: 90%;
+			text-align: center;
+			box-shadow: 0 8px 40px rgba(0,0,0,0.7), 0 0 0 1px rgba(126,200,126,0.2);
+			animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+			position: relative;
+		}
+		@keyframes popIn {
+			from { transform: scale(0.6); opacity: 0; }
+			to   { transform: scale(1);   opacity: 1; }
+		}
 
+		/* ── Feather / decorative icon strip ── */
+		#thompson-popup .tp-icon {
+			font-size: 2.8rem;
+			margin-bottom: 6px;
+			display: block;
+		}
+
+		/* ── "Correct!" banner ── */
+		#thompson-popup .tp-correct {
+			color: #a8f0a8;
+			font-size: 1.05rem;
+			font-weight: 600;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			margin-bottom: 4px;
+		}
+
+		/* ── English animal name ── */
+		#thompson-popup .tp-english {
+			color: #ffffff;
+			font-size: 1.55rem;
+			font-weight: 700;
+			margin: 0 0 18px;
+		}
+
+		/* ── Divider ── */
+		#thompson-popup .tp-divider {
+			border: none;
+			border-top: 1px solid rgba(126,200,126,0.35);
+			margin: 0 0 18px;
+		}
+
+		/* ── Language label ── */
+		#thompson-popup .tp-lang-label {
+			color: #7ec87e;
+			font-size: 0.78rem;
+			font-weight: 600;
+			letter-spacing: 0.18em;
+			text-transform: uppercase;
+			margin-bottom: 6px;
+		}
+
+		/* ── Nlaka'pamux word ── */
+		#thompson-popup .tp-word {
+			color: #ffe97a;
+			font-size: 2.2rem;
+			font-weight: 800;
+			letter-spacing: 0.04em;
+			margin: 0 0 6px;
+			text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+		}
+
+		/* ── Pronunciation ── */
+		#thompson-popup .tp-pronunciation {
+			color: #c8e8c8;
+			font-size: 0.95rem;
+			font-style: italic;
+			margin: 0 0 24px;
+		}
+
+		/* ── Close button ── */
+		#thompson-popup .tp-close {
+			background: #7ec87e;
+			color: #0f2a0f;
+			border: none;
+			border-radius: 30px;
+			padding: 11px 38px;
+			font-size: 1rem;
+			font-weight: 700;
+			cursor: pointer;
+			transition: background 0.2s, transform 0.15s;
+			letter-spacing: 0.04em;
+		}
+		#thompson-popup .tp-close:hover {
+			background: #a8f0a8;
+			transform: scale(1.04);
+		}
+		#thompson-popup .tp-close:active {
+			transform: scale(0.97);
+		}
+
+		/* ── Small attribution ── */
+		#thompson-popup .tp-attribution {
+			margin-top: 14px;
+			color: rgba(200,232,200,0.5);
+			font-size: 0.68rem;
+		}
+	</style>
 </head> 
  
 <body>
@@ -44,6 +165,135 @@ if (location.protocol.substr(0, 4) === "file")
 	<script src="scripts/offlineclient.js" type="module"></script>
 	<script src="scripts/main.js" type="module"></script>
 	<script src="scripts/register-sw.js" type="module"></script>
+
+	<!-- ═══════════════════════════════════════════════════════════
+	     Thompson Language (Nlaka'pamux / Nłeʔképmxcín) Popup
+	     ═══════════════════════════════════════════════════════════ -->
+
+	<!-- Popup HTML -->
+	<div id="thompson-overlay" role="dialog" aria-modal="true" aria-labelledby="tp-word-label">
+		<div id="thompson-popup">
+			<span class="tp-icon">🪶</span>
+			<p class="tp-correct">Correct!</p>
+			<p class="tp-english" id="tp-english-name">Fox</p>
+			<hr class="tp-divider">
+			<p class="tp-lang-label">Nłeʔképmxcín (Thompson Language)</p>
+			<p class="tp-word" id="tp-word-label">éyxʷ</p>
+			<p class="tp-pronunciation" id="tp-pronunciation">hu-why-uxw</p>
+			<button class="tp-close" id="tp-close-btn" onclick="ThompsonPopup.close()">Keep Playing ▶</button>
+			<p class="tp-attribution">Source: languagelab.ca · Nlaka'pamux Language Lab</p>
+		</div>
+	</div>
+
+	<!-- Popup Logic -->
+	<script>
+	(function () {
+		"use strict";
+
+		// ── Thompson Language animal dictionary ──────────────────────────
+		// Keys are lowercase English animal names as they would appear in
+		// Construct 3 text / variable values.  Add or adjust entries here
+		// to match whatever strings your game uses.
+		var TRANSLATIONS = {
+			"bear":        { word: "shba.Ach",       pronunciation: "Shh-ba-Ach" },
+			"beaver":      { word: "łq̓úpeʔ",         pronunciation: "thl-koo-puh" },
+			"bee":         { word: "mə̣́c̓e",           pronunciation: "muh-tsa" },
+			"wasp":        { word: "mə̣́c̓e",           pronunciation: "muh-tsa" },
+			"bird":        { word: "spz̓úz̓uʔ",        pronunciation: "spuz-ooz" },
+			"cat":         { word: "poṣ",             pronunciation: "pos" },
+			"chicken":     { word: "cə́kn",            pronunciation: "chee-kin" },
+			"cow":         { word: "stm̓ált",          pronunciation: "sta-malt" },
+			"coyote":      { word: "snk̓y̓ép",          pronunciation: "shin-k-yap" },
+			"cricket":     { word: "ṣə̣́lṣəl",         pronunciation: "tsol-tsol" },
+			"crow":        { word: "sʔéʔeʔ",          pronunciation: "sh-ah-ah" },
+			"deer":        { word: "smíyc",           pronunciation: "smeech" },
+			"dog":         { word: "shḴAḴhha",        pronunciation: "sh-ḴaḴ-ah" },
+			"eagle":       { word: "heléw̓",           pronunciation: "ha-la-ow" },
+			"fish":        { word: "sqyéytn",         pronunciation: "shky-ay-tin" },
+			"salmon":      { word: "sk̓əlxʷ",          pronunciation: "sk-ulhw" },
+			"fox":         { word: "éyxʷ",            pronunciation: "hu-why-uxw" },
+			"goat":        { word: "x̣ʷiƛ̓éc̓",         pronunciation: "sxhigh-tla-ts" },
+			"grasshopper": { word: "c̓énc̓ən̓",         pronunciation: "tsin-tsin" },
+			"grizzly":     { word: "səxʷsuxʷ",        pronunciation: "shux-shux" },
+			"horse":       { word: "k̓əɬc̓esqáx̣aʔ",    pronunciation: "n-kilth-tsash-shkah-hah" },
+			"fly":         { word: "mə̣́ze",            pronunciation: "muh-za" },
+			"mouse":       { word: "k̓ʷətn̓íy",        pronunciation: "kwat-nee" },
+			"owl":         { word: "skelúleʔ",        pronunciation: "shkuh-lou-lah" },
+			"pig":         { word: "kʷəṣó",           pronunciation: "co-so" },
+			"robin":       { word: "kʷlíqəq",         pronunciation: "kwa-lek-ak" },
+			"slug":        { word: "q̓əƛ̓en̓íy",        pronunciation: "katl-an-ee" },
+			"wolf":        { word: "shenKee-yAp",     pronunciation: "Shen-kee-yAp" },
+			"mule deer":   { word: "sƛ̓úleʔ",          pronunciation: "sh-tlo-lah" },
+			"black tail deer": { word: "sƛ̓úleʔ",      pronunciation: "sh-tlo-lah" }
+		};
+
+		// ── Public API ───────────────────────────────────────────────────
+		window.ThompsonPopup = {
+
+			/**
+			 * Show the popup for a given animal.
+			 * @param {string} animalName  – English name, e.g. "fox" or "Fox"
+			 */
+			show: function (animalName) {
+				var key  = (animalName || "").toLowerCase().trim();
+				var data = TRANSLATIONS[key];
+
+				if (!data) {
+					// Animal not in dictionary – silently skip popup
+					return;
+				}
+
+				// Capitalise the English label
+				var label = key.charAt(0).toUpperCase() + key.slice(1);
+
+				document.getElementById("tp-english-name").textContent  = label;
+				document.getElementById("tp-word-label").textContent     = data.word;
+				document.getElementById("tp-pronunciation").textContent  = data.pronunciation;
+
+				var overlay = document.getElementById("thompson-overlay");
+				overlay.classList.add("active");
+				// Focus the close button for keyboard / accessibility
+				setTimeout(function () {
+					document.getElementById("tp-close-btn").focus();
+				}, 50);
+			},
+
+			/** Close the popup. */
+			close: function () {
+				document.getElementById("thompson-overlay").classList.remove("active");
+			}
+		};
+
+		// ── Close on backdrop click ──────────────────────────────────────
+		document.getElementById("thompson-overlay").addEventListener("click", function (e) {
+			if (e.target === this) ThompsonPopup.close();
+		});
+
+		// ── Close on Escape key ──────────────────────────────────────────
+		document.addEventListener("keydown", function (e) {
+			if (e.key === "Escape") ThompsonPopup.close();
+		});
+
+		// ── Construct 3 bridge ──────────────────────────────────────────
+		// Construct 3 can call browser functions via the "Browser" plugin
+		// "Execute JavaScript" action.  In your Construct event sheet, on
+		// the event "Correct animal selected", add:
+		//
+		//   Browser → Execute JavaScript:
+		//     ThompsonPopup.show("{AnimalName}");
+		//
+		// where {AnimalName} is the Construct variable/text holding the
+		// correct animal's English name (e.g. "fox").
+		//
+		// Alternatively, if Construct dispatches a custom DOM event you
+		// can listen for it here.  Example listener (disabled by default):
+		//
+		// document.addEventListener("c3_correct_animal", function (e) {
+		//     ThompsonPopup.show(e.detail && e.detail.animal);
+		// });
+
+	}());
+	</script>
 
 </body> 
 </html>
