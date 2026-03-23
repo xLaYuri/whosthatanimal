@@ -1,0 +1,742 @@
+{
+    "en_us": {
+        "1": {
+            "options": ["Seahorse", "Rabbit", "Dog", "Owl"],
+            "answer": "Dog"
+        },
+        "2": {
+            "options": ["Elephant", "Horse", "Giraffe", "Seal"],
+            "answer": "Horse"
+        },
+        "3": {
+            "options": ["Dolphin", "Cat", "Seahorse", "Seal"],
+            "answer": "Seahorse"
+        },
+        "4": {
+            "options": ["Bear", "Monkey", "Lion", "Owl"],
+            "answer": "Owl"
+        },
+        "5": {
+            "options": ["Pig", "Panda", "Cat", "Frog"],
+            "answer": "Cat"
+        },
+        "6": {
+            "options": ["Pig", "Rabbit", "Fox", "Duck"],
+            "answer": "Rabbit"
+        },
+        "7": {
+            "options": ["Duck", "Elephant", "Seal", "Rhino"],
+            "answer": "Duck"
+        },
+        "8": {
+            "options": ["Lion", "Bear", "Seal", "Giraffe"],
+            "answer": "Seal"
+        },
+        "9": {
+            "options": ["Pig", "Lion", "Elephant", "Horse"],
+            "answer": "Pig"
+        },
+        "10": {
+            "options": ["Frog", "Seal", "Rhino", "Snake"],
+            "answer": "Frog"
+        },
+        "11": {
+            "options": ["Panda", "Bear", "Owl", "Monkey"],
+            "answer": "Panda"
+        },
+        "12": {
+            "options": ["Dolphin", "Elephant", "Seal", "Giraffe"],
+            "answer": "Giraffe"
+        },
+        "13": {
+            "options": ["Rhino", "Snake", "Frog", "Bear"],
+            "answer": "Rhino"
+        },
+        "14": {
+            "options": ["Seahorse", "Seal", "Dolphin", "Duck"],
+            "answer": "Dolphin"
+        },
+        "15": {
+            "options": ["Cat", "Lion", "Monkey", "Bear"],
+            "answer": "Lion"
+        },
+        "16": {
+            "options": ["Fox", "Duck", "Frog", "Seahorse"],
+            "answer": "Fox"
+        },
+        "17": {
+            "options": ["Dog", "Lion", "Elephant", "Pig"],
+            "answer": "Elephant"
+        },
+        "18": {
+            "options": ["Duck", "Seal", "Panda", "Bear"],
+            "answer": "Bear"
+        },
+        "19": {
+            "options": ["Bear", "Cat", "Fox", "Snake"],
+            "answer": "Snake"
+        },
+        "20": {
+            "options": ["Lion", "Dog", "Rabbit", "Monkey"],
+            "answer": "Monkey"
+        }
+    },
+    "pt_br": {
+        "1": {
+            "options": ["Cavalo-marinho", "Coelho", "Cachorro", "Coruja"],
+            "answer": "Cachorro"
+        },
+        "2": {
+            "options": ["Elefante", "Cavalo", "Girafa", "Foca"],
+            "answer": "Cavalo"
+        },
+        "3": {
+            "options": ["Golfinho", "Gato", "Cavalo-marinho", "Foca"],
+            "answer": "Cavalo-marinho"
+        },
+        "4": {
+            "options": ["Urso", "Macaco", "Leão", "Coruja"],
+            "answer": "Coruja"
+        },
+        "5": {
+            "options": ["Porco", "Panda", "Gato", "Sapo"],
+            "answer": "Gato"
+        },
+        "6": {
+            "options": ["Porco", "Coelho", "Raposa", "Pato"],
+            "answer": "Coelho"
+        },
+        "7": {
+            "options": ["Pato", "Elefante", "Foca", "Rinoceronte"],
+            "answer": "Pato"
+        },
+        "8": {
+            "options": ["Leão", "Urso", "Foca", "Girafa"],
+            "answer": "Foca"
+        },
+        "9": {
+            "options": ["Porco", "Leão", "Elefante", "Cavalo"],
+            "answer": "Porco"
+        },
+        "10": {
+            "options": ["Sapo", "Foca", "Rinoceronte", "Cobra"],
+            "answer": "Sapo"
+        },
+        "11": {
+            "options": ["Panda", "Urso", "Coruja", "Macaco"],
+            "answer": "Panda"
+        },
+        "12": {
+            "options": ["Golfinho", "Elefante", "Foca", "Girafa"],
+            "answer": "Girafa"
+        },
+        "13": {
+            "options": ["Rinoceronte", "Cobra", "Sapo", "Urso"],
+            "answer": "Rinoceronte"
+        },
+        "14": {
+            "options": ["Cavalo-marinho", "Foca", "Golfinho", "Pato"],
+            "answer": "Golfinho"
+        },
+        "15": {
+            "options": ["Gato", "Leão", "Macaco", "Urso"],
+            "answer": "Leão"
+        },
+        "16": {
+            "options": ["Raposa", "Pato", "Sapo", "Cavalo-marinho"],
+            "answer": "Raposa"
+        },
+        "17": {
+            "options": ["Cachorro", "Leão", "Elefante", "Porco"],
+            "answer": "Elefante"
+        },
+        "18": {
+            "options": ["Pato", "Foca", "Panda", "Urso"],
+            "answer": "Urso"
+        },
+        "19": {
+            "options": ["Urso", "Gato", "Raposa", "Cobra"],
+            "answer": "Cobra"
+        },
+        "20": {
+            "options": ["Leão", "Cachorro", "Coelho", "Macaco"],
+            "answer": "Macaco"
+        }
+    },
+    "es_es": {
+        "1": {
+            "options": ["Caballito de mar", "Conejo", "Perro", "Búho"],
+            "answer": "Perro"
+        },
+        "2": {
+            "options": ["Elefante", "Caballo", "Jirafa", "Foca"],
+            "answer": "Caballo"
+        },
+        "3": {
+            "options": ["Delfín", "Gato", "Caballito de mar", "Foca"],
+            "answer": "Caballito de mar"
+        },
+        "4": {
+            "options": ["Oso", "Mono", "León", "Búho"],
+            "answer": "Búho"
+        },
+        "5": {
+            "options": ["Cerdo", "Panda", "Gato", "Rana"],
+            "answer": "Gato"
+        },
+        "6": {
+            "options": ["Cerdo", "Conejo", "Zorro", "Pato"],
+            "answer": "Conejo"
+        },
+        "7": {
+            "options": ["Pato", "Elefante", "Foca", "Rinoceronte"],
+            "answer": "Pato"
+        },
+        "8": {
+            "options": ["León", "Oso", "Foca", "Jirafa"],
+            "answer": "Foca"
+        },
+        "9": {
+            "options": ["Cerdo", "León", "Elefante", "Caballo"],
+            "answer": "Cerdo"
+        },
+        "10": {
+            "options": ["Rana", "Foca", "Rinoceronte", "Serpiente"],
+            "answer": "Rana"
+        },
+        "11": {
+            "options": ["Panda", "Oso", "Búho", "Mono"],
+            "answer": "Panda"
+        },
+        "12": {
+            "options": ["Delfín", "Elefante", "Foca", "Jirafa"],
+            "answer": "Jirafa"
+        },
+        "13": {
+            "options": ["Rinoceronte", "Serpiente", "Rana", "Oso"],
+            "answer": "Rinoceronte"
+        },
+        "14": {
+            "options": ["Caballito de mar", "Foca", "Delfín", "Pato"],
+            "answer": "Delfín"
+        },
+        "15": {
+            "options": ["Gato", "León", "Mono", "Oso"],
+            "answer": "León"
+        },
+        "16": {
+            "options": ["Zorro", "Pato", "Rana", "Caballito de mar"],
+            "answer": "Zorro"
+        },
+        "17": {
+            "options": ["Perro", "León", "Elefante", "Cerdo"],
+            "answer": "Elefante"
+        },
+        "18": {
+            "options": ["Pato", "Foca", "Panda", "Oso"],
+            "answer": "Oso"
+        },
+        "19": {
+            "options": ["Oso", "Gato", "Zorro", "Serpiente"],
+            "answer": "Serpiente"
+        },
+        "20": {
+            "options": ["León", "Perro", "Conejo", "Mono"],
+            "answer": "Mono"
+        }
+    },
+    "de_de": {
+        "1": {
+            "options": ["Seepferdchen", "Hase", "Hund", "Eule"],
+            "answer": "Hund"
+        },
+        "2": {
+            "options": ["Elefant", "Pferd", "Giraffe", "Seehund"],
+            "answer": "Pferd"
+        },
+        "3": {
+            "options": ["Delfin", "Katze", "Seepferdchen", "Seehund"],
+            "answer": "Seepferdchen"
+        },
+        "4": {
+            "options": ["Bär", "Affe", "Löwe", "Eule"],
+            "answer": "Eule"
+        },
+        "5": {
+            "options": ["Schwein", "Panda", "Katze", "Frosch"],
+            "answer": "Katze"
+        },
+        "6": {
+            "options": ["Schwein", "Hase", "Fuchs", "Ente"],
+            "answer": "Hase"
+        },
+        "7": {
+            "options": ["Ente", "Elefant", "Seehund", "Nashorn"],
+            "answer": "Ente"
+        },
+        "8": {
+            "options": ["Löwe", "Bär", "Seehund", "Giraffe"],
+            "answer": "Seehund"
+        },
+        "9": {
+            "options": ["Schwein", "Löwe", "Elefant", "Pferd"],
+            "answer": "Schwein"
+        },
+        "10": {
+            "options": ["Frosch", "Seehund", "Nashorn", "Schlange"],
+            "answer": "Frosch"
+        },
+        "11": {
+            "options": ["Panda", "Bär", "Eule", "Affe"],
+            "answer": "Panda"
+        },
+        "12": {
+            "options": ["Delfin", "Elefant", "Seehund", "Giraffe"],
+            "answer": "Giraffe"
+        },
+        "13": {
+            "options": ["Nashorn", "Schlange", "Frosch", "Bär"],
+            "answer": "Nashorn"
+        },
+        "14": {
+            "options": ["Seepferdchen", "Seehund", "Delfin", "Ente"],
+            "answer": "Delfin"
+        },
+        "15": {
+            "options": ["Katze", "Löwe", "Affe", "Bär"],
+            "answer": "Löwe"
+        },
+        "16": {
+            "options": ["Fuchs", "Ente", "Frosch", "Seepferdchen"],
+            "answer": "Fuchs"
+        },
+        "17": {
+            "options": ["Hund", "Löwe", "Elefant", "Schwein"],
+            "answer": "Elefant"
+        },
+        "18": {
+            "options": ["Ente", "Seehund", "Panda", "Bär"],
+            "answer": "Bär"
+        },
+        "19": {
+            "options": ["Bär", "Katze", "Fuchs", "Schlange"],
+            "answer": "Schlange"
+        },
+        "20": {
+            "options": ["Löwe", "Hund", "Hase", "Affe"],
+            "answer": "Affe"
+        }
+    },
+    "ru_ru": {
+        "1": {
+            "options": ["Морской конек", "Кролик", "Собака", "Сова"],
+            "answer": "Собака"
+        },
+        "2": {
+            "options": ["Слон", "Лошадь", "Жираф", "Тюлень"],
+            "answer": "Лошадь"
+        },
+        "3": {
+            "options": ["Дельфин", "Кошка", "Морской конек", "Тюлень"],
+            "answer": "Морской конек"
+        },
+        "4": {
+            "options": ["Медведь", "Обезьяна", "Лев", "Сова"],
+            "answer": "Сова"
+        },
+        "5": {
+            "options": ["Свинья", "Панда", "Кошка", "Лягушка"],
+            "answer": "Кошка"
+        },
+        "6": {
+            "options": ["Свинья", "Кролик", "Лиса", "Утка"],
+            "answer": "Кролик"
+        },
+        "7": {
+            "options": ["Утка", "Слон", "Тюлень", "Носорог"],
+            "answer": "Утка"
+        },
+        "8": {
+            "options": ["Лев", "Медведь", "Тюлень", "Жираф"],
+            "answer": "Тюлень"
+        },
+        "9": {
+            "options": ["Свинья", "Лев", "Слон", "Лошадь"],
+            "answer": "Свинья"
+        },
+        "10": {
+            "options": ["Лягушка", "Тюлень", "Носорог", "Змея"],
+            "answer": "Лягушка"
+        },
+        "11": {
+            "options": ["Панда", "Медведь", "Сова", "Обезьяна"],
+            "answer": "Панда"
+        },
+        "12": {
+            "options": ["Дельфин", "Слон", "Тюлень", "Жираф"],
+            "answer": "Жираф"
+        },
+        "13": {
+            "options": ["Носорог", "Змея", "Лягушка", "Медведь"],
+            "answer": "Носорог"
+        },
+        "14": {
+            "options": ["Морской конек", "Тюлень", "Дельфин", "Утка"],
+            "answer": "Дельфин"
+        },
+        "15": {
+            "options": ["Кошка", "Лев", "Обезьяна", "Медведь"],
+            "answer": "Лев"
+        },
+        "16": {
+            "options": ["Лиса", "Утка", "Лягушка", "Морской конек"],
+            "answer": "Лиса"
+        },
+        "17": {
+            "options": ["Собака", "Лев", "Слон", "Свинья"],
+            "answer": "Слон"
+        },
+        "18": {
+            "options": ["Утка", "Тюлень", "Панда", "Медведь"],
+            "answer": "Медведь"
+        },
+        "19": {
+            "options": ["Медведь", "Кошка", "Лиса", "Змея"],
+            "answer": "Змея"
+        },
+        "20": {
+            "options": ["Лев", "Собака", "Кролик", "Обезьяна"],
+            "answer": "Обезьяна"
+        }
+    },
+    "zh_cn": {
+        "1": {
+            "options": ["海马", "兔子", "狗", "猫头鹰"],
+            "answer": "狗"
+        },
+        "2": {
+            "options": ["大象", "马", "长颈鹿", "海豹"],
+            "answer": "马"
+        },
+        "3": {
+            "options": ["海豚", "猫", "海马", "海豹"],
+            "answer": "海马"
+        },
+        "4": {
+            "options": ["熊", "猴子", "狮子", "猫头鹰"],
+            "answer": "猫头鹰"
+        },
+        "5": {
+            "options": ["猪", "熊猫", "猫", "青蛙"],
+            "answer": "猫"
+        },
+        "6": {
+            "options": ["猪", "兔子", "狐狸", "鸭子"],
+            "answer": "兔子"
+        },
+        "7": {
+            "options": ["鸭子", "大象", "海豹", "犀牛"],
+            "answer": "鸭子"
+        },
+        "8": {
+            "options": ["狮子", "熊", "海豹", "长颈鹿"],
+            "answer": "海豹"
+        },
+        "9": {
+            "options": ["猪", "狮子", "大象", "马"],
+            "answer": "猪"
+        },
+        "10": {
+            "options": ["青蛙", "海豹", "犀牛", "蛇"],
+            "answer": "青蛙"
+        },
+        "11": {
+            "options": ["熊猫", "熊", "猫头鹰", "猴子"],
+            "answer": "熊猫"
+        },
+        "12": {
+            "options": ["海豚", "大象", "海豹", "长颈鹿"],
+            "answer": "长颈鹿"
+        },
+        "13": {
+            "options": ["犀牛", "蛇", "青蛙", "熊"],
+            "answer": "犀牛"
+        },
+        "14": {
+            "options": ["海马", "海豹", "海豚", "鸭子"],
+            "answer": "海豚"
+        },
+        "15": {
+            "options": ["猫", "狮子", "猴子", "熊"],
+            "answer": "狮子"
+        },
+        "16": {
+            "options": ["狐狸", "鸭子", "青蛙", "海马"],
+            "answer": "狐狸"
+        },
+        "17": {
+            "options": ["狗", "狮子", "大象", "猪"],
+            "answer": "大象"
+        },
+        "18": {
+            "options": ["鸭子", "海豹", "熊猫", "熊"],
+            "answer": "熊"
+        },
+        "19": {
+            "options": ["熊", "猫", "狐狸", "蛇"],
+            "answer": "蛇"
+        },
+        "20": {
+            "options": ["狮子", "狗", "兔子", "猴子"],
+            "answer": "猴子"
+        }
+    },
+    "ja_jp": {
+        "1": {
+            "options": ["タツノオトシゴ", "ウサギ", "犬", "フクロウ"],
+            "answer": "犬"
+        },
+        "2": {
+            "options": ["ゾウ", "ウマ", "キリン", "アザラシ"],
+            "answer": "ウマ"
+        },
+        "3": {
+            "options": ["イルカ", "ネコ", "タツノオトシゴ", "アザラシ"],
+            "answer": "タツノオトシゴ"
+        },
+        "4": {
+            "options": ["クマ", "サル", "ライオン", "フクロウ"],
+            "answer": "フクロウ"
+        },
+        "5": {
+            "options": ["ブタ", "パンダ", "ネコ", "カエル"],
+            "answer": "ネコ"
+        },
+        "6": {
+            "options": ["ブタ", "ウサギ", "キツネ", "アヒル"],
+            "answer": "ウサギ"
+        },
+        "7": {
+            "options": ["アヒル", "ゾウ", "アザラシ", "サイ"],
+            "answer": "アヒル"
+        },
+        "8": {
+            "options": ["ライオン", "クマ", "アザラシ", "キリン"],
+            "answer": "アザラシ"
+        },
+        "9": {
+            "options": ["ブタ", "ライオン", "ゾウ", "ウマ"],
+            "answer": "ブタ"
+        },
+        "10": {
+            "options": ["カエル", "アザラシ", "サイ", "ヘビ"],
+            "answer": "カエル"
+        },
+        "11": {
+            "options": ["パンダ", "クマ", "フクロウ", "サル"],
+            "answer": "パンダ"
+        },
+        "12": {
+            "options": ["イルカ", "ゾウ", "アザラシ", "キリン"],
+            "answer": "キリン"
+        },
+        "13": {
+            "options": ["サイ", "ヘビ", "カエル", "クマ"],
+            "answer": "サイ"
+        },
+        "14": {
+            "options": ["タツノオトシゴ", "アザラシ", "イルカ", "アヒル"],
+            "answer": "イルカ"
+        },
+        "15": {
+            "options": ["ネコ", "ライオン", "サル", "クマ"],
+            "answer": "ライオン"
+        },
+        "16": {
+            "options": ["キツネ", "アヒル", "カエル", "タツノオトシゴ"],
+            "answer": "キツネ"
+        },
+        "17": {
+            "options": ["犬", "ライオン", "ゾウ", "ブタ"],
+            "answer": "ゾウ"
+        },
+        "18": {
+            "options": ["アヒル", "アザラシ", "パンダ", "クマ"],
+            "answer": "クマ"
+        },
+        "19": {
+            "options": ["クマ", "ネコ", "キツネ", "ヘビ"],
+            "answer": "ヘビ"
+        },
+        "20": {
+            "options": ["ライオン", "犬", "ウサギ", "サル"],
+            "answer": "サル"
+        }
+    },
+    "it_it": {
+        "1": {
+            "options": ["Cavalluccio marino", "Coniglio", "Cane", "Gufo"],
+            "answer": "Cane"
+        },
+        "2": {
+            "options": ["Elefante", "Cavallo", "Giraffa", "Foca"],
+            "answer": "Cavallo"
+        },
+        "3": {
+            "options": ["Delfino", "Gatto", "Cavalluccio marino", "Foca"],
+            "answer": "Cavalluccio marino"
+        },
+        "4": {
+            "options": ["Orso", "Scimmia", "Leone", "Gufo"],
+            "answer": "Gufo"
+        },
+        "5": {
+            "options": ["Maiale", "Panda", "Gatto", "Rana"],
+            "answer": "Gatto"
+        },
+        "6": {
+            "options": ["Maiale", "Coniglio", "Volpe", "Anatra"],
+            "answer": "Coniglio"
+        },
+        "7": {
+            "options": ["Anatra", "Elefante", "Foca", "Rinoceronte"],
+            "answer": "Anatra"
+        },
+        "8": {
+            "options": ["Leone", "Orso", "Foca", "Giraffa"],
+            "answer": "Foca"
+        },
+        "9": {
+            "options": ["Maiale", "Leone", "Elefante", "Cavallo"],
+            "answer": "Maiale"
+        },
+        "10": {
+            "options": ["Rana", "Foca", "Rinoceronte", "Serpente"],
+            "answer": "Rana"
+        },
+        "11": {
+            "options": ["Panda", "Orso", "Gufo", "Scimmia"],
+            "answer": "Panda"
+        },
+        "12": {
+            "options": ["Delfino", "Elefante", "Foca", "Giraffa"],
+            "answer": "Giraffa"
+        },
+        "13": {
+            "options": ["Rinoceronte", "Serpente", "Rana", "Orso"],
+            "answer": "Rinoceronte"
+        },
+        "14": {
+            "options": ["Cavalluccio marino", "Foca", "Delfino", "Anatra"],
+            "answer": "Delfino"
+        },
+        "15": {
+            "options": ["Gatto", "Leone", "Scimmia", "Orso"],
+            "answer": "Leone"
+        },
+        "16": {
+            "options": ["Volpe", "Anatra", "Rana", "Cavalluccio marino"],
+            "answer": "Volpe"
+        },
+        "17": {
+            "options": ["Cane", "Leone", "Elefante", "Maiale"],
+            "answer": "Elefante"
+        },
+        "18": {
+            "options": ["Anatra", "Foca", "Panda", "Orso"],
+            "answer": "Orso"
+        },
+        "19": {
+            "options": ["Orso", "Gatto", "Volpe", "Serpente"],
+            "answer": "Serpente"
+        },
+        "20": {
+            "options": ["Leone", "Cane", "Coniglio", "Scimmia"],
+            "answer": "Scimmia"
+        }
+    },
+    "ko_kr": {
+        "1": {
+            "options": ["해마", "토끼", "개", "올빼미"],
+            "answer": "개"
+        },
+        "2": {
+            "options": ["코끼리", "말", "기린", "물개"],
+            "answer": "말"
+        },
+        "3": {
+            "options": ["돌고래", "고양이", "해마", "물개"],
+            "answer": "해마"
+        },
+        "4": {
+            "options": ["곰", "원숭이", "사자", "올빼미"],
+            "answer": "올빼미"
+        },
+        "5": {
+            "options": ["돼지", "판다", "고양이", "개구리"],
+            "answer": "고양이"
+        },
+        "6": {
+            "options": ["돼지", "토끼", "여우", "오리"],
+            "answer": "토끼"
+        },
+        "7": {
+            "options": ["오리", "코끼리", "물개", "코뿔소"],
+            "answer": "오리"
+        },
+        "8": {
+            "options": ["사자", "곰", "물개", "기린"],
+            "answer": "물개"
+        },
+        "9": {
+            "options": ["돼지", "사자", "코끼리", "말"],
+            "answer": "돼지"
+        },
+        "10": {
+            "options": ["개구리", "물개", "코뿔소", "뱀"],
+            "answer": "개구리"
+        },
+        "11": {
+            "options": ["판다", "곰", "올빼미", "원숭이"],
+            "answer": "판다"
+        },
+        "12": {
+            "options": ["돌고래", "코끼리", "물개", "기린"],
+            "answer": "기린"
+        },
+        "13": {
+            "options": ["코뿔소", "뱀", "개구리", "곰"],
+            "answer": "코뿔소"
+        },
+        "14": {
+            "options": ["해마", "물개", "돌고래", "오리"],
+            "answer": "돌고래"
+        },
+        "15": {
+            "options": ["고양이", "사자", "원숭이", "곰"],
+            "answer": "사자"
+        },
+        "16": {
+            "options": ["여우", "오리", "개구리", "해마"],
+            "answer": "여우"
+        },
+        "17": {
+            "options": ["개", "사자", "코끼리", "돼지"],
+            "answer": "코끼리"
+        },
+        "18": {
+            "options": ["오리", "물개", "판다", "곰"],
+            "answer": "곰"
+        },
+        "19": {
+            "options": ["곰", "고양이", "여우", "뱀"],
+            "answer": "뱀"
+        },
+        "20": {
+            "options": ["사자", "개", "토끼", "원숭이"],
+            "answer": "원숭이"
+        }
+    }
+}
+
+
